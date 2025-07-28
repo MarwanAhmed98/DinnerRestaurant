@@ -1,0 +1,516 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --Main-color: #d65106;
+    --Second-Color: #010101;
+}
+
+.Navbar {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+    border-radius: 0px 0px 100px 100px !important;
+    background-color: #f8f9fa !important;
+    padding: 15px 0px;
+}
+
+.navbar-nav .nav-link.active {
+    background: var(--Main-color);
+    color: #ffffff !important;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.nav-link {
+    color: var(--Second-Color) !important;
+    margin: 0 5px;
+    transition: all ease 0.3s;
+}
+
+.nav-link:hover {
+    background: var(--Main-color);
+    color: #ffffff !important;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: var(--Main-color);
+    color: #ffffff;
+    opacity: 1;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--Main-color);
+}
+
+.CarousalLayer {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.CarousalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CarousalContent h1 {
+    font-weight: 500;
+    font-size: 64px;
+    color: #fff;
+}
+
+.CarousalContent p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.About {
+    background-image: url(../images/about-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+.AboutContent h1 {
+    font-size: 30px;
+    color: #010101;
+    font-weight: 500;
+}
+
+.AboutContent span {
+    color: var(--Main-color);
+}
+
+.MyBtn {
+    background-color: var(--Main-color);
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all ease 0.3s;
+    margin-bottom: 15px;
+}
+
+.MyBtn:hover {
+    background-color: #333333;
+}
+
+.AboutImg {
+    box-shadow: 20px 20px 0px #d65106;
+}
+
+.AboutImg img {
+    width: 100%;
+    z-index: 10000;
+}
+
+.bg {
+    background-image: url(../images/qt-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    background-attachment: fixed;
+}
+
+.bg p {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+.bg span {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.Menu h2 {
+    color: var(--Second-Color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.Menu p {
+    font-size: 18px;
+    font-weight: 200;
+    color: #666666;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--Main-color);
+    color: #ffffff !important;
+}
+
+.MenuCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.Menu-Layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(207, 166, 113, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.MenuImgLayer:hover .Menu-Layer {
+    transform: translateY(0%);
+}
+
+.MenuLayerContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Gallery h2 {
+    color: var(--Second-Color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.Gallery p {
+    font-size: 18px;
+    font-weight: 200;
+    color: #666666;
+}
+
+.GalleryCard img {
+    border: 3px solid var(--Main-color);
+    transition: all ease 0.3s;
+}
+
+.GalleryCard img:hover {
+    transform: scale(1.1);
+}
+
+.Reviews h2 {
+    color: var(--Second-Color);
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.Reviews p {
+    font-size: 18px;
+    font-weight: 200;
+    color: #666666;
+}
+
+h5 {
+    color: var(--Main-color);
+}
+
+.Contact {
+    background-color: var(--Main-color);
+    border-radius: 10px;
+}
+
+.Contact1 {
+    background-color: var(--Main-color);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.ContactIcon {
+    color: var(--Main-color);
+    background-color: #ffffff;
+    font-size: 30px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.ContactContent {
+    color: #ffffff;
+}
+
+.ContactContent h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ContactContent p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.Footer {
+    background-color: var(--Second-Color);
+    border-bottom: 2px solid rgba(207, 166, 113, 0.5);
+}
+
+.FooterContent {
+    margin-bottom: 15px;
+}
+
+.FooterContent h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(207, 166, 113, 0.5);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.FooterContent p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.FIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 4px;
+    color: var(--Main-color);
+    margin-right: .625rem;
+    transition: all ease 0.3s;
+}
+
+.Facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.instagram:hover {
+    background: #125688 !important;
+    color: white;
+}
+
+.tumblr:hover {
+    background: #32506d !important;
+    color: white;
+}
+
+.twitter:hover {
+    background: #00aced !important;
+    color: white;
+}
+
+.google:hover {
+    background: #DC3C22 !important;
+    color: white;
+}
+
+.FooterContentHover {
+    transition: all ease 0.3s;
+}
+
+.FooterContentHover:hover {
+    color: var(--Main-color);
+}
+
+.CopyRight {
+    background-color: var(--Second-Color);
+    text-align: center;
+    padding: 20px 0px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.CopyRight a {
+    text-decoration: none;
+    color: white;
+}
+
+.MyAncher {
+    position: fixed;
+    bottom: .625rem;
+    right: .9375rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 50%;
+    padding: .3125rem;
+    z-index: 999999;
+    background-color: var(--Main-color);
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.MyAncher:hover {
+    background-color: #333333;
+}
+
+.Loading {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em,
+            2em -2em 0 0em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 0;
+    }
+
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+            3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 -1em;
+    }
+
+    25% {
+        box-shadow: 0 -3em 0 -0.5em,
+            2em -2em 0 0, 3em 0 0 0.2em,
+            2em 2em 0 0, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 -1em;
+    }
+
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+            -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+            -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+            -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+@media (max-width: 980px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .Navbar {
+        border-radius: 0px 0px 60px 60px !important;
+    }
+    .Carousal {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .Carousal .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
+    }
+    .CarousalContent h1 {
+        font-weight: 500;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .CarousalContent p {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .CarousalContent button {
+        padding: 6px 15px;
+        font-size: 18px;
+    }
+}
